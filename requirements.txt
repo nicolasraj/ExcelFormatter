@@ -1,3 +1,4 @@
 phonenumbers
 openpyxl
 xlsxwriter
+inotify
