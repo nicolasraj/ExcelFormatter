@@ -8,4 +8,4 @@ RUN pip3 install xlrd
 RUN pip3 install openpyxl
 RUN pip3 install xlsxwriter
 COPY . .
-CMD streamlit run Shopify.py --server.fileWatcherType none --server.port $PORT
+CMD streamlit run Shopify.py --server.port $PORT --server.fileWatcherType none
