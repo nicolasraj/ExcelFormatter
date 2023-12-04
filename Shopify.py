@@ -6,9 +6,10 @@ import os
 from io import BytesIO
 from phonenumbers import COUNTRY_CODE_TO_REGION_CODE
 
+
 #title of microservice
 #st.image('russell.gif')
-st.set_option('deprecation.showfileUploaderEncoding', False)
+#st.set_option('deprecation.showfileUploaderEncoding', False)
 st.title('Shopify Shipping Template Export')
 
 st.sidebar.title("Shopify Template")
@@ -75,6 +76,7 @@ def get_table_download_link_csv(df):
 
 
 user_file = st.sidebar.file_uploader("Upload your Shopify File:")
+#user_file = io.TextIOWrapper(uploaded_file)
 if user_file is not None:
     try:
         with st.spinner("Uploading your Shopify File..."):
